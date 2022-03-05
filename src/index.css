@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.img-header {
+  width: 100%;
+  display: flex;
+  background-image: url("https://img.freepik.com/free-vector/police-detectives-searching-evidences-with-magnifying-glass-flat-vector-illustration-cartoon-spies-agents-hats-gun-undercover-file-mystery-investigation-concept_74855-13205.jpg?size=626&ext=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative
+}
