@@ -24,10 +24,10 @@ function Navbar(user, setUser) {
                     {user ? (
                         <>
                             <button onClick={handleLogoutClick}>Logout</button>
+                            <Link to="/about">About</Link>
                         </>
                     ) : (
                         <>
-                            <Link to="/about">About</Link>
                             <Link to="/signup">Signup</Link>
                             <Link to="/login">Login</Link>
                         </>

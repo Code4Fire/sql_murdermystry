@@ -2,6 +2,7 @@ import react from "react";
 import Navbar from './Navbar';
 
 function About(){
+    
     return(
         <div className="header">
             <Navbar/>
