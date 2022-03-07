@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes } from "react-router-dom";
 import Navbar from './Navbar';
 // import Login from "./Login";
 // import SignUp from "./Signup";
@@ -17,26 +17,26 @@ function App() {
       />
       <main>
         {user ? (
-          <Switch>
-            <Route path="/">
+          <Routes>
+            <Routes path="/">
               <Home user={user} />
-            </Route>
-          </Switch>
+            </Routes>
+          </Routes>
         ) : (
-          <Switch>
-            <Route path="/signup">
+          <Routes>
+            <Routes path="/signup">
               <SignUp setUser={setUser} />
-            </Route>
-            <Route path="/login">
+            </Routes>
+            <Routes path="/login">
               <Login setUser={setUser} />
-            </Route>
-            <Route path="/about">
+            </Routes>
+            <Routes path="/about">
               <About setUser={setUser} />
-            </Route>
-            <Route path="/">
+            </Routes>
+            <Routes path="/">
               <Home user={user} />
-            </Route>
-          </Switch>
+            </Routes>
+          </Routes>
         )}
       </main>
     </div>
