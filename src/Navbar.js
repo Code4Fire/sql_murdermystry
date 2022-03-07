@@ -27,6 +27,7 @@ function Navbar(user, setUser) {
                         </>
                     ) : (
                         <>
+                            <Link to="/about">About</Link>
                             <Link to="/signup">Signup</Link>
                             <Link to="/login">Login</Link>
                         </>

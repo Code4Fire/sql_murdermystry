@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import Navbar from './Navbar';
-import Login from "./Login";
-import SignUp from "./Signup";
+// import Login from "./Login";
+// import SignUp from "./Signup";
 import Home from "./Home";
 import './App.css';
+import About from "./About";
 
 function App() {
   const [user,setUser] = useState(null);
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login setUser={setUser} />
+            </Route>
+            <Route path="/about">
+              <About setUser={setUser} />
             </Route>
             <Route path="/">
               <Home user={user} />
