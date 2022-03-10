@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from './Navbar';
 // import Login from "./Login";
 // import SignUp from "./Signup";
@@ -18,24 +18,24 @@ function App() {
       <main>
         {user ? (
           <Routes>
-            <Routes path="/">
+            <Route path="/">
               <Home user={user} />
-            </Routes>
+            </Route>
           </Routes>
         ) : (
           <Routes>
-            <Routes path="/signup">
+            {/* <Routes path="/signup">
               <SignUp setUser={setUser} />
             </Routes>
             <Routes path="/login">
               <Login setUser={setUser} />
-            </Routes>
-            <Routes path="/about">
+            </Routes> */}
+            <Route path="/about">
               <About setUser={setUser} />
-            </Routes>
-            <Routes path="/">
+            </Route>
+            <Route path="/">
               <Home user={user} />
-            </Routes>
+            </Route>
           </Routes>
         )}
       </main>
